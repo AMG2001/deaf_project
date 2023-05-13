@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutterapp/easy_20meetapp/generatedsign_textwidget/generated/GeneratedWidget1.dart';
+import 'package:deaf_project/easy_20meetapp/generatedsign_textwidget/generated/GeneratedWidget1.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
 
 /* Frame Frame 2

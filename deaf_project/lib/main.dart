@@ -16,6 +16,7 @@ import 'package:deaf_project/easy_20meetapp/generatedspeech_textwidget/Generated
 import 'package:deaf_project/easy_20meetapp/generatedsplashwidget/GeneratedSplashWidget.dart';
 import 'package:deaf_project/easy_20meetapp/preparedMeeting.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 
 void main() {
@@ -25,8 +26,8 @@ void main() {
 class Easy_20MeetApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
+    return GetMaterialApp(
+      title: 'Deaf project',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),

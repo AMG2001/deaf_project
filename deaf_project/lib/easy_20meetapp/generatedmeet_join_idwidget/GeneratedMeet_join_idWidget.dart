@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutterapp/easy_20meetapp/generatedmeet_join_idwidget/generated/GeneratedGroup13Widget.dart';
-import 'package:flutterapp/easy_20meetapp/generatedmeet_join_idwidget/generated/GeneratedLine6Widget2.dart';
-import 'package:flutterapp/easy_20meetapp/generatedmeet_join_idwidget/generated/GeneratedNameWidget.dart';
-import 'package:flutterapp/easy_20meetapp/generatedmeet_join_idwidget/generated/GeneratedIDWidget.dart';
-import 'package:flutterapp/easy_20meetapp/generatedmeet_join_idwidget/generated/GeneratedWhatsApp_Image_20230424_at_8032Widget.dart';
-import 'package:flutterapp/easy_20meetapp/generatedmeet_join_idwidget/generated/GeneratedLine7Widget2.dart';
+import 'package:deaf_project/easy_20meetapp/generatedmeet_join_idwidget/generated/GeneratedGroup13Widget.dart';
+import 'package:deaf_project/easy_20meetapp/generatedmeet_join_idwidget/generated/GeneratedLine6Widget2.dart';
+import 'package:deaf_project/easy_20meetapp/generatedmeet_join_idwidget/generated/GeneratedNameWidget.dart';
+import 'package:deaf_project/easy_20meetapp/generatedmeet_join_idwidget/generated/GeneratedIDWidget.dart';
+import 'package:deaf_project/easy_20meetapp/generatedmeet_join_idwidget/generated/GeneratedWhatsApp_Image_20230424_at_8032Widget.dart';
+import 'package:deaf_project/easy_20meetapp/generatedmeet_join_idwidget/generated/GeneratedLine7Widget2.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
 
 /* Frame meet_join_id
