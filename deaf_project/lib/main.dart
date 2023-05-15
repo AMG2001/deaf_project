@@ -20,10 +20,12 @@ import 'package:get/get.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
 
-void main() async{
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
-  options: DefaultFirebaseOptions.currentPlatform,
-);
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+
   runApp(Easy_20MeetApp());
 }
 
@@ -41,13 +43,13 @@ class Easy_20MeetApp extends StatelessWidget {
         '/GeneratedSplashWidget': (context) => GeneratedSplashWidget(),
         '/GeneratedLogo4Widget': (context) => GeneratedLogo4Widget(),
         '/GeneratedIntro2Widget': (context) => GeneratedIntro2Widget(),
-        '/chatPage':(context) => chatPage(),
+        '/chatPage': (context) => chatPage(),
         // '/GeneratedSignInWidget': (context) => GeneratedSignInWidget(),
         // '/GeneratedSignUpWidget': (context) => GeneratedSignUpWidget(),
-        '/SignIn':(context) => SignIn(),
-        '/SignUp':(context) => SignUp(),
-        '/preparedMeeting':(context) => preparedMeeting(),
-        '/SpeechSampleApp':(context) => SpeechSampleApp(),
+        '/SignIn': (context) => SignIn(),
+        '/SignUp': (context) => SignUp(),
+        '/preparedMeeting': (context) => preparedMeeting(),
+        '/SpeechSampleApp': (context) => SpeechScreen(),
         '/GeneratedQuickServiceWidget': (context) =>
             GeneratedQuickServiceWidget(),
         '/GeneratedMeetingWidget': (context) => GeneratedMeetingWidget(),

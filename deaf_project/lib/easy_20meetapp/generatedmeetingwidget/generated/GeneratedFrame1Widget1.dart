@@ -38,38 +38,39 @@ class GeneratedFrame1Widget1 extends StatelessWidget {
         /**
          *  upload generated password on firestore .
          */
-        await FirebaseFirestore.instance.collection(_roomId).add({
-          'room_id' : password
+        await FirebaseFirestore.instance
+            .collection(_roomId)
+            .add({'room_id': password}).then((value) {
+          Navigator.pushNamed(context, '/preparedMeeting');
+          showDialog(
+              context: context,
+              builder: (context) {
+                return AlertDialog(
+                  actions: [
+                    FloatingActionButton(
+                      onPressed: () {
+                        Navigator.of(context).pop();
+                      },
+                      child: Text("Cancel"),
+                    ),
+                  ],
+                  title: Text(
+                    "Please Copy these ID and Put it in Room ID",
+                  ),
+                  content: SelectableText.rich(
+                    TextSpan(
+                      children: [
+                        TextSpan(
+                            text: "$password", style: TextStyle(fontSize: 20)),
+                        // TextSpan(text: "Copy me", style: TextStyle(color: Colors.red)),
+                        // TextSpan(text: " and leave me"),
+                      ],
+                    ),
+                  ),
+                );
+              });
+          print(password);
         });
-        Navigator.pushNamed(context, '/preparedMeeting');
-        showDialog(
-            context: context,
-            builder: (context) {
-              return AlertDialog(
-                actions: [
-                  FloatingActionButton(
-                    onPressed: () {
-                      Navigator.of(context).pop();
-                    },
-                    child: Text("Cancel"),
-                  ),
-                ],
-                title: Text(
-                  "Please Copy these ID and Put it in Room ID",
-                ),
-                content: SelectableText.rich(
-                  TextSpan(
-                    children: [
-                      TextSpan(
-                          text: "$password", style: TextStyle(fontSize: 20)),
-                      // TextSpan(text: "Copy me", style: TextStyle(color: Colors.red)),
-                      // TextSpan(text: " and leave me"),
-                    ],
-                  ),
-                ),
-              );
-            });
-        print(password);
       },
       child: Container(
         width: 340.0,
